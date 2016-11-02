@@ -1,0 +1,36 @@
+@import "bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap/mixins";
+
+// CSS Reset
+@import "bootstrap/reset";
+
+// Grid system and page structure
+@import "bootstrap/scaffolding";
+@import "bootstrap/layouts";
+
+// Base CSS
+@import "bootstrap/type";
+@import "bootstrap/forms";
+
+// Components: common
+@import "bootstrap/dropdowns";
+
+// Components: Nav
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+
+// Components: buttons
+@import "bootstrap/buttons";
+
+// Components: Misc
+@import "bootstrap/labels-badges";
+
+// Utility classes
+@import "bootstrap/utilities"; // Has to be last to override when necessary
+@import "bootstrap/component-animations";
+@import "bootstrap/carousel";
+@import "bootstrap/responsive-1200px-min";
+@import "bootstrap/responsive-767px-max";
+@import "bootstrap/responsive-768px-979px";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/responsive-navbar";

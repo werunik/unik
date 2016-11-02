@@ -1,0 +1,61 @@
+---
+layout: default
+title: Exemples de nos creations site web
+description: Exemples de réalisations de site et application par l'agence web Unik spécialisée en creation site internet, application mobile, web marketing et agence de referencement naturel.
+redirects:
+- /en/en/portfolio
+- /fr/fr/portfolio/ux-ergonomie
+- /fr/fr/portfolio/applications-web-mobiles-branding-seo/r%C3%A9sidence-ines
+- /fr/fr/portfolio/drupal-e-commerce-applications-web-mobiles-seo-branding/citydeal
+- /fr/fr/portfolio/web-marketing
+- /fr/fr/portfolio/drupal-e-commerce-seo-design/frukos
+- /fr/fr/portfolio/drupal-applications-web-mobiles-seo/hygidis
+- /fr/fr/portfolio/drupal-applications-web-mobiles-seo/startupmorocco
+- /fr/fr/portfolio/applications-web
+- /fr/fr/portfolio/drupal-applications-web-mobiles-design-seo/premier-de-la-classe
+- /fr/fr/portfolio?qt-portfolio=0
+- /fr/fr/portfolio/applications-mobiles
+- /fr/fr/portfolio/drupal-branding-seo-design-htmlcss/azarkfone
+- /fr/fr/portfolio/drupal-design-seo/berdic
+- /en/content/infomediaire
+- /fr/content/infomediaire
+- /content/infom%C3%A9diaire
+- /fr/content/infom%C3%A9diaire
+- /en/content/infom%C3%A9diaire
+- /fr/content/infomediaire
+- /fr/content/infom%C3%A9diaire
+- /en/content/infom%C3%A9diaire
+- /content/infom%C3%A9diaire
+- /fr/fr/portfolio/drupal-branding-seo-design-htmlcss/azarkfone
+- /fr/fr/portfolio/drupal
+---
+<div class="work-listing container">
+  <section class="header">
+      <h2><span>Réalisations</span></h2>
+  </section>
+  {% for item in site.categories.portfolio %}
+  {% assign zero = forloop.index|modulo:2 %}
+  {% if zero == 1 %}
+  <div class="row">
+  {% endif %}
+    <div class="span6">
+      <article class="work">
+        <h3>
+          <a href="{{ item.link }}" rel="nofollow">
+            {{ item.title }}<br>
+            <span class="worktype">
+              {{ item.worktype }}
+            </span>
+          </a>
+        </h3>
+      </article>
+      <a href="{{ item.link }}" rel="nofollow">
+        <img src="{{ item.image }}" alt="{{ item.title }}">
+      </a>
+    </div>
+  {% if zero == 0 %}
+  </div><!-- /.row -->
+  {% endif %}
+  {% endfor %}
+  </div>
+</div><!-- /.content --> <!-- Wael i think there is one extra div -->

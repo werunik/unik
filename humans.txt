@@ -1,0 +1,27 @@
+/* TEAM */
+  CEO:Ismail Mechbal
+  Contact: ismail [at] unik.ma
+  Twitter: @ismailmechbal
+  From:Casablanca, Stockholm
+
+  Quality Manager & Salesforce Expert: Yacine Fandi
+  Contact: yacine [at] unik.ma
+  From:Casablanca, Helsinki
+
+  Lead developer: Wael El Hachimi El Idrissi
+  Contact: wael [at] unik.ma
+  From:Casablanca
+
+  Developer: Mohamed El Hachimi El Idrissi
+  Contact: mohamed [at] unik.ma
+  From:Casablanca
+
+  Lead Designer: Youness Khordale
+  Contact: youness [at] unik.ma
+  From:Casablanca
+
+/* SITE */
+  Language: Arabic / English / Swedish / Finnish / Spanish / French
+  Doctype:HTML5
+  IDE: Sublime Text 2
+  Framework: Jekyll

@@ -1,0 +1,31 @@
+---
+layout: default
+title: Formation Maroc, Formation IT, Formation Drupal, Formation Salesforce, Formation Ecommerce, Formation Management, Formation Marketing
+description: Unik fournit plusieurs type de formations- Drupal, Salesforce, Ecommerce, Management et Marketing.
+redirects:
+- /en/training
+- /fr/formation
+- /en/formation
+- /formation-drupal-maroc
+- /en/en/training
+---
+<!-- <section class="header">
+  <h1>Blog</h1>
+</section> -->
+<div class="container blog">
+  <h2><span>Nos formations</span></h2>
+  <div><h5><strong>Boostez les compétences de vos collaborateurs en 2013</strong></h5><br>
+  Nos services ne s'arrêtent pas au développement. Nous offrons des formations sur mesure afin que nos clients possèdent les compétences et ressources nécessaires pour bénéficier au mieux de leur solution.
+  </div>
+  <hr>
+  {% for item in site.categories.formations %}
+  <article class="blog-post">
+    <a class="blog-title" href="{{ item.url }}" title="Read the full {{ item.title }} article">
+      <h3>{{ item.title }}</h3>
+    </a>
+    <h4>{{ item.description }}</h4>
+    <a href="{{ item.url }}" class="btn btn-read" title="Read the full {{ item.title }} article">Plus de détails</a>
+  </article>
+  <hr>
+  {% endfor %}
+</div>

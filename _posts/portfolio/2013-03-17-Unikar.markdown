@@ -1,0 +1,9 @@
+---
+layout: post
+title: Unikar
+link: http://www.unikar.ma
+categories: portfolio
+worktype: Design & Développement sous Drupal (Apache solr + Faceted search)
+excerpt: Unikar is a classified ads website for used cars offering a great User Experience and Good performance.
+image: ../images/work/unikar.jpg
+---

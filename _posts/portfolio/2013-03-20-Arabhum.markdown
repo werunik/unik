@@ -1,0 +1,12 @@
+---
+layout: post
+title: Arabhum.net
+link: http://www.arabhum.net
+categories: portfolio
+excerpt: UNOCHA has signed an outsourcing agreement with Unik to develop the UN OCHA multilingual online GIS and data reporting service under Drupal 7 platform.
+company: United Nations
+worktype: Design & Développement sous Drupal (Apache solr + Faceted search)
+testimonial-text:
+testimonial-person:
+image: ../images/work/arabhum.jpg
+---

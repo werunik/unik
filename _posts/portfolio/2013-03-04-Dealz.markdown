@@ -1,0 +1,8 @@
+---
+layout: post
+title: Dealz
+categories: portfolio
+worktype: Développement sous Drupal
+excerpt: Dealz est un site de deal avec un système de fidélisation des utilisateurs.
+image: ../images/work/dealz.jpg
+---

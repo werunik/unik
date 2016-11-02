@@ -1,0 +1,38 @@
+# Site name
+name: Creation site Maroc - Unik
+
+# Site description
+description: Unik fournit des services de création de site web au Maroc sous Drupal, intégration de Salesforce , développement d'applications Mobile et consulting en Ergonomie au Maroc.
+
+#Site keyowrds
+keywords: Drupal, Salesforce, CRM, Mobile application, Web application, Formation, Formation Drupal, Formation Salesforce, Formation marketing, Formation Management
+
+
+# The website where you'll be publishing your site.
+url: http://www.unik.ma
+
+# Other non-important information. Don't mess with unless you're certain.
+# NB: I guess you can always reclone the repo if you mess up. Lucky you. Go wild.
+permalink: /:categories/:title
+redirects: yes
+
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+
+#
+# Jekyll-Assets configuration
+#
+assets:
+  compress:
+    css: sass
+    js:  uglifier
+
+exclude:
+ - unicorn.rb
+ - README.md
+ - Procfile
+ - Gemfile
+ - Gemfile.lock
+ - config.ru
+ - vendor

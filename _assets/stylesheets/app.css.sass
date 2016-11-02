@@ -1,0 +1,401 @@
+//= require vendor/bootstrap
+
+
+@import "vendor/bootstrap/mixins"
+
+
+body
+  background-color: #fff
+
+#content
+  background-color: #fff
+  border: 1px solid #ccc
+
+  @include border-radius(6px)
+  @include box-shadow(0 1px 3px rgba(0,0,0,.1))
+
+  margin: 25px auto
+  padding: 25px
+  width: 940px
+
+#js-tag-search
+  display: none
+
+.js
+  body
+    @include opacity(0)
+
+    &.is-ready
+      @include opacity(100)
+      @include transition(opacity 1s)
+
+  #js-tag-search
+    display: block
+.navbar
+  .brand
+    padding-top: 4px
+
+.slogan-wrapper
+  background-image: url(image_path('top-bakground.jpg'))
+  height: 290px
+  margin-bottom: 70px
+  .slogan
+    text-align: center
+    padding-top: 60px
+    p
+      font-weight: 300
+    h1
+      font-weight: 400
+      font-size: 30px
+    h2
+      font-weight: 200
+      font-size: 16px
+      strong
+        font-weight: 400
+  .btn-center
+    margin-top: 60px
+.what-we-do ul
+  .img-circle
+    background: #54c4dc
+    width: 150px
+    height: 150px
+    margin: auto
+  .first
+    -webkit-transition: opacity 1s ease-out
+    -moz-transition: opacity 1s ease-out
+    -o-transition: opacity 1s ease-out
+    -ms-transition: opacity 1s ease-out
+    transition: opacity 1s ease-out
+    opacity: 0
+    img
+      -webkit-transition: -webkit-transform 2s ease-out 0.5s
+      -moz-transition: -moz-transform 2s ease-out 0.5s
+      -o-transition: -o-transform 2s ease-out 0.5s
+      -ms-transition: -ms-transform 2s ease-out 0.5s
+      transition: transform 2s ease-out 0.5s
+  .second
+    -webkit-transition: opacity 1s ease-out
+    -moz-transition: opacity 1s ease-out
+    -o-transition: opacity 1s ease-out
+    -ms-transition: opacity 1s ease-out
+    transition: opacity 1s ease-out
+    -webkit-transition-delay: 0.5s
+    transition-delay: 0.5s
+    opacity: 0
+    img
+      margin-right: 90px
+      -webkit-transition: margin-right 1s ease-out
+      -moz-transition: margin-right 1s ease-out
+      -o-transition: margin-right 1s ease-out
+      -ms-transition: margin-right 1s ease-out
+      transition: margin-right 1s ease-out
+      transition-delay: 0.5s
+  .third
+    -webkit-transition: opacity 1s ease-out
+    -moz-transition: opacity 1s ease-out
+    -o-transition: opacity 1s ease-out
+    -ms-transition: opacity 1s ease-out
+    transition: opacity 1s ease-out
+    -webkit-transition-delay: 1s
+    transition-delay: 1s
+    opacity: 0
+    img
+      margin-top: 88px
+      -webkit-transition: margin-top 4s ease-out
+      -moz-transition: margin-top 4s ease-out
+      -o-transition: margin-top 4s ease-out
+      -ms-transition: margin-top 4s ease-out
+      transition: margin-top 4s ease-out
+      -webkit-transition-delay: 2s
+      transition-delay: 2s
+  img
+    margin-top: 33px
+  &.onscope
+    .first, .second, .third
+      opacity: 1
+    .first
+      img
+        -webkit-transform: rotate(180deg)
+        -moz-transform: rotate(180deg)
+        -ms-transform: rotate(180deg)
+        transform: rotate(180deg)
+    .second
+      img
+        margin-right: 0
+    .third
+      img
+        margin-top: 33px
+
+.what-we-do, .our-work, .our-blog, .services-page, .our-clients, .work-listing, .training, .contact
+  text-align: center
+  p
+    line-height: 30px
+    font-weight: 300
+    strong
+      font-weight: 400
+  h3
+    font-size: 18px
+  h2
+    border-top: 1px solid #f2f2f2
+    span
+      background: #fff
+      position: relative
+      top: -26px
+      padding: 0 12px
+      font-weight: 300
+.what-we-do
+  ul
+    margin-top: 83px
+    margin-bottom: 80px
+    li
+      width: 26%
+      h3
+        width: 149px
+        margin: auto
+        line-height: 22px
+        margin-top: 20px
+.work-listing
+  margin-top: 60px
+  margin-bottom: 90px
+.blog-article, .training-article
+  margin-top: 60px
+  margin-bottom: 90px
+  h1
+    text-align: center
+    margin-bottom: 100px
+    line-height: 50px
+.blog, .training
+  margin-top: 86px
+  text-align: center
+  h2
+    border-top: 1px solid #f2f2f2
+    span
+      background: #fff
+      position: relative
+      top: -26px
+      padding: 0 12px
+      font-weight: 300
+  .blog-post
+    margin-top: 30px
+    margin-bottom: 90px
+    .btn
+      margin-top: 20px
+  a.blog-title
+    color: #383838
+    font-size: 36px
+    font-weight: 600
+    h3
+      line-height: 29px
+    &:hover
+      text-decoration: none
+      color: #37a3bb
+      -webkit-transition: color 0.2s ease-in
+      -moz-transition: color 0.2s ease-in
+      -o-transition: color 0.2s ease-in
+      -ms-transition: color 0.2s ease-in
+      transition: color 0.2s ease-in
+  h3
+    font-weight: 600
+  h4
+    line-height: 36px
+    margin-top: 40px
+  small
+    font-size: 16px
+    a
+      color: #b8b8b8
+      font-weight: 300
+      &:hover
+        text-decoration: none
+        color: #37a3bb
+        -webkit-transition: color 0.2s ease-in
+        -moz-transition: color 0.2s ease-in
+        -o-transition: color 0.2s ease-in
+        -ms-transition: color 0.2s ease-in
+        transition: color 0.2s ease-in
+
+.btn-center
+  text-align: center
+
+.wrapper-gris
+  h2
+    border-color: #eee
+    span
+      background: #fafafa
+  background: #fafafa
+  padding-top: 70px
+  border-top: 1px solid #f4f4f4
+  border-bottom: 1px solid #f4f4f4
+
+.our-work
+  .btn-center
+    margin-bottom: 30px
+    margin-top: 56px
+
+#front-carousel
+  margin-top: 50px
+  margin-bottom: 40px
+
+.our-blog, .training
+  padding-top: 70px
+  .blog-title
+    color: #383838
+    font-size: 36px
+    font-weight: 300
+  h3
+    font-size: 22px
+  small
+    font-size: 16px
+  .btn-read
+    margin-top: 30px
+    margin-bottom: 50px
+  h4
+    font-weight: 300
+    line-height: 30px
+    margin-top: 40px
+
+
+.services-page, .contact
+  margin-top: 86px
+  margin-bottom: 70px
+  .about
+    margin-bottom: 60px
+  .row
+    margin-top: 60px
+  .span10
+    text-align: left
+    h3, p
+      padding-left: 12px
+  .img-circle
+    background: #54c4dc
+    width: 150px
+    height: 150px
+    margin-top: 20px
+    img
+      margin-top: 33px
+  .wrapper-gris
+    padding-bottom: 70px
+    margin-bottom: 70px
+  li
+    margin-right: 18px
+  li.last
+    margin-right: 0px
+  .btn-center
+    margin-top: 70px
+  .about
+    margin-bottom: 60px
+  .row
+    margin-top: 60px
+.work
+  h3
+    width: 460px
+    height: 250px
+    display: table
+    vertical-align: middle
+    font-size: 30px
+    color: #fff
+    font-weight: 400
+    margin: 0
+    background: none
+    span
+      background: none
+      font-size: 16px
+
+    a
+      color: #fff
+      display: table-cell
+      vertical-align: middle
+      text-decoration: none
+      width: 90%
+      height: 90%
+      padding: 5%
+      font-weight: 300
+      font-size: 30px
+//.work-listing
+//  .row
+//    margin-bottom: 20px
+//  .span6
+//    position:relative
+//    article
+//      position: absolute
+//      background: #54c4dc
+//      -webkit-transition: all 0.3s ease-in-out
+//      -moz-transition: all 0.3s ease-in-out
+//      -o-transition: all 0.3s ease-in-out
+//      transition: all 0.3s ease-in-out
+//      opacity: 0
+//      &:hover
+//        opacity: 0.9
+.logo-clients
+  border: 1px solid #f2f2f2
+  padding: 4px
+  margin-left: 10px
+
+footer
+  border-top: 1px solid #f4f4f4
+  padding-top: 20px
+  padding-bottom: 20px
+  background: #fafafa
+  color: #c8c8c8
+  font-size: 12px
+  a
+    color: #37a3bb
+
+a
+  color: #0088cc
+  &:hover
+    text-decoration: none
+    color: #37a3bb
+    -webkit-transition: color 0.2s ease-in
+    -moz-transition: color 0.2s ease-in
+    -o-transition: color 0.2s ease-in
+    -ms-transition: color 0.2s ease-in
+    transition: color 0.2s ease-in
+
+p
+  font-size: 18px
+  font-weight: 400
+  line-height: 22px
+.cyan-color
+  color: #37a3bb
+
+// External links styling
+a[href ^= "http"] :after
+  content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=)
+.about-author
+  background: #f8f8f8
+  padding: 4px 10px 4px 10px
+
+
+.contact
+  .btn
+    border: none
+.contact-form input[type="text"], .contact-form .input-text, .contact-form textarea
+  width: 96%
+  padding: 10px 4px 10px 10px
+  height: 17px
+  margin-bottom: 10px
+.contact-form textarea
+  min-height: 122px
+.training-article, .blog-article
+  h4
+    margin: 24px 0
+  li
+    padding: 5px 10px
+  p
+    line-height: 32px
+    margin: 20px 0
+  img
+    border: 1px solid #ccc
+    max-width: 80%
+    margin: 20px 0
+    max-height: 82%
+  blockquote
+    padding: 0 0 0 20px
+    margin: 35px 0 35px
+    border-left: 5px solid #ddd
+    background: #f2f2f2
+
+.alert
+  padding: 10px
+  background-color: rgb(5, 148, 91)
+  color: #ffffff

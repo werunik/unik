@@ -1,0 +1,32 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unik Experience blog</title>
+    <link>http://unik.ma/blog</link>
+    <atom:link href="http://unik.ma/feeds/rss.xml" rel="self"
+      type="application/rss+xml" />
+    <description>
+      Unik est une société de conseil spécialisée dans le développement et l'audit des systèmes d'informations.
+      Unik est composée d'ingénieurs issue des grandes écoles Finlandaises et Suédoises avec un savoir faire Scandinave de haut volet pour vous accompagner tout au long de vos projets.
+      Nous sommes implanté à Helsinki avec une agence à Casablanca.
+    </description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for item in site.categories.blog %}
+    <item>
+      <title>{{ item.title }}</title>
+      <link>http://unik.ma{{ item.url }}</link>
+      <pubDate>{{ item.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>Unik Experience</author>
+      <guid>http://unik.ma{{ item.url }}</guid>
+      <description>{{ item.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+//
+// Responsive: Large desktop and up (Modiffied from 1200)
+// --------------------------------------------------
+
+
+@media (min-width: 980px) {
+
+  // Fixed grid
+  @include grid-core($gridColumnWidth, $gridGutterWidth);
+
+  // Fluid grid
+  @include grid-fluid($fluidGridColumnWidth, $fluidGridGutterWidth);
+
+  // Input grid
+  @include grid-input($gridColumnWidth, $gridGutterWidth);
+
+  // Thumbnails
+  .thumbnails {
+    margin-left: -$gridGutterWidth;
+  }
+  .thumbnails > li {
+    margin-left: $gridGutterWidth;
+  }
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+
+}

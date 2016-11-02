@@ -1,0 +1,22 @@
+#= require vendor/jquery
+#= require vendor/bootstrap/bootstrap-transition
+#= require vendor/bootstrap/bootstrap-collapse
+#= require vendor/bootstrap/bootstrap-carousel
+$ ->
+  $("body").addClass "is-ready"
+
+  $('.carousel').carousel()
+
+  # $('.carousel').on('slide',(e)->
+  # 		console.log('slided')
+  # 	)
+  $(window).scroll(()->
+  	
+  	scrollPos = $(window).scrollTop()
+  	if scrollPos > 250 
+  		$(".what-we-do ul").addClass "onscope"
+  	# else if scrollPos > 900
+  	# 	$("#front-carousel").addClass "onscope"
+  	# console.log(scrollPos)
+  	)
+  

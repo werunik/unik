@@ -1,0 +1,33 @@
+	<div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="{{ site.url }}" title="Cliquer pour revenir vers la page d'accueil" >
+						<img src="../../images/logo.png" alt="Logo Unik, Agence de création de sites web et applications mobile">
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li {% if page.url contains 'services' %}class="active"{% endif %}>
+              	<a href="/services">Services</a>
+              </li>
+              <li {% if page.url contains 'portfolio' %}class="active"{% endif %}>
+              	<a href="/portfolio">Portfolio</a>
+              </li>
+              <li {% if page.url contains 'formations' %}class="active"{% endif %}>
+                <a href="/formations">Formations</a>
+              </li>
+              <li {% if page.url contains 'blog' %}class="active"{% endif %}>
+                <a href="/blog">Blog</a>
+              </li>
+              <li {% if page.url contains 'contact' %}class="active"{% endif %}>
+              	<a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>

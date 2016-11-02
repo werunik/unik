@@ -1,0 +1,9 @@
+---
+layout: post
+title: Forsa
+link: http://forsa.unikar.ma
+categories: portfolio
+excerpt: Forsa is a classified ads website for the middle east offering a great User Experience and Good performance.
+worktype: Design & Développement sous Drupal (Apache solr + Faceted search)
+image: ../images/work/forsa.jpg
+---

@@ -1,0 +1,7 @@
+---
+layout: post
+title: Frukos
+categories: portfolio
+worktype: Design & Développement sous Drupal
+image: ../images/work/frukos.jpg
+---

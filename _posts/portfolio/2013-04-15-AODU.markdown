@@ -1,0 +1,13 @@
+---
+layout: post
+title: Autorité Organisatrice des Déplacements Urbains du Grand Casablanca - AODU
+link: http://www.casamobility.ma
+categories: portfolio
+worktype:
+company: Autorité Organisatrice des Déplacements Urbains du Grand Casablanca (AODU)
+worktype: Design & Développement sous Drupal
+testimonial-text:
+testimonial-person:
+image: ../images/work/aodu.jpg
+published: false
+---

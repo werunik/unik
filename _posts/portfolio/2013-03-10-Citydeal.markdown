@@ -1,0 +1,7 @@
+---
+layout: post
+title: Citydeal
+categories: portfolio
+excerpt: Citydeal est un aggrégateur des sites de deal du Maroc
+image: ../images/work/citydeal.jpg
+---

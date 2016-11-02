@@ -1,0 +1,9 @@
+---
+layout: post
+title: Kollabo
+link: http://kollabo.unikar.ma
+categories: portfolio
+worktype: Design & Développement sous Drupal
+excerpt: Kollabo is a web application that allows collaboration between teachers.
+image: ../images/work/kollabo.jpg
+---

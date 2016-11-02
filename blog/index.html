@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+redirects:
+- /fr/fr/blog/1
+- /fr/fr/blog
+- /fr/fr/blog/articles
+- /en/en/blog
+- /fr/fr/blog/rss.xml
+- /en/en/blog/articles/ajouter-des-feuilles-de-style-cibl%C3%A9es-par-navigateur
+- /tutorial
+- /tutorial/introduction-open-atrium
+- /tutorial/architecture-cck-views
+- /tutorial/rss.xml
+- /podcast
+- /podcast/cr%C3%A9ation-dun-th%C3%A8me
+---
+<!-- <section class="header">
+  <h1>Unik est une agence spécialisée dans la création et développement de site web en utilisant Drupal - notre équipe est fière de créer des sites somptueux tout en respectant les normes.
+</h1>
+</section> -->
+<div class="container blog">
+  <h2><span>Blog</span></h2>
+  {% for item in site.categories.blog %}
+  <article class="blog-post">
+    <a class="blog-title" href="{{ item.url }}" title="Read the full {{ item.title }} article">
+      <h3>{{ item.title }}</h3>
+    </a>
+    <div itemscope itemtype="http://schema.org/Person">
+      <small>
+        <em>
+          <a href="{{ site.categories.blog.first.googleauthor }}" itemprop="url" rel="author" title="Read about the author {{ site.categories.blog.first.authorname }}">
+            <span itemprop="name">by {{ site.categories.blog.first.authorname }}</span>
+          </a>
+        </em>
+      </small>
+    </div>
+    <h4>{{ item.excerpt }}</h4>
+    <a href="{{ item.url }}" class="btn btn-read" title="Read the full {{ item.title }} article">Read more</a>
+  </article>
+  <hr>
+  {% endfor %}
+</div>
